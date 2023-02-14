@@ -7,13 +7,13 @@ import (
 )
 
 type Category struct {
-	db			*sql.db
-	ID			string
-	Name		string
-	Description	string
+	db          *sql.DB
+	ID          string
+	Name        string
+	Description string
 }
 
-func NewCategory(db *sql.db) *Category  {
+func NewCategory(db *sql.DB) *Category {
 	return &Category{db: db}
 }
 
